@@ -1,4 +1,5 @@
 Implemented
 + Equality Circuit (+test)
++ Comparison Circuit (+test)
 + Simulation
 

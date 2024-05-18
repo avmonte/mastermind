@@ -11,14 +11,17 @@ E = [LineQubit(3*num_qubits)]
 
 # Testing
 # circuit.append(X(A[0]))
+# circuit.append(X(B[0]))
 
 # Create the equality check circuit
 circuit += equality_check(A, B, e, E)
-print(circuit)
 
 # Simulate the circuit
 circuit.append(measure(E, key='result'))
+
 simulator = Simulator()
 result = simulator.run(circuit)
+
 measurement = result.measurements['result']
-print("Ancilla measurement result (1 means qubits are equal):", measurement[0][0])
+print(circuit)
+print("equal? ", measurement[0][0] == 1)
