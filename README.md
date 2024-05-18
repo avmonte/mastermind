@@ -1,5 +1,5 @@
 # mastermind
-A final project for CS339: Mechanics, *American University of Armenia*, Spring 2024
+A final project for CS339: Quantum Computing, *American University of Armenia*, Spring 2024
 
 Student: Gevorg Nersesian, gevorg_nersesian@edu.aua.am    
 
